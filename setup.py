@@ -32,7 +32,7 @@ setup(
         "Programming Language :: Python :: Implementation :: PyPy",
     ],
     install_requires=[
-        "graphql-core>=3.2,<3.3",
+        "graphql-core>=3.2,<=3.3.0a3",
         "typing-extensions>=4.1,<5; python_version < '3.8'",
     ],
     python_requires=">=3.6,<4",
