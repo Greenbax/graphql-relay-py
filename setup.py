@@ -1,5 +1,6 @@
 from re import search
-from setuptools import setup, find_packages
+
+from setuptools import find_packages, setup
 
 with open("src/graphql_relay/version.py") as version_file:
     version = search('version = "(.*)"', version_file.read()).group(1)
@@ -32,7 +33,7 @@ setup(
         "Programming Language :: Python :: Implementation :: PyPy",
     ],
     install_requires=[
-        "graphql-core>=3.2,<=3.3.0a3",
+        "graphql-core>=3.2,<3.4",
         "typing-extensions>=4.1,<5; python_version < '3.8'",
     ],
     python_requires=">=3.6,<4",
